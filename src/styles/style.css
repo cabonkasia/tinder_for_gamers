@@ -1,0 +1,24 @@
+.swipeGalleryContainer {
+  position: relative;
+  margin: 0px auto;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+}
+
+.swipeGalleryCurrentImage {
+  position: relative;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+}
+
+.namePreview {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
