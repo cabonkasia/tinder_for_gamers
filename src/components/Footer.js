@@ -1,8 +1,8 @@
 import * as React from "react";
-import heart from "../heart.png";
+import heart from "../images/heart.png";
 import "../Style.css";
-import dislike from "../dislike.png";
-import profile from "../profile.png";
+import dislike from "../images/dislike.png";
+import profile from "../images/profile.png";
 
 export default class Footer extends React.Component {
   render() {
