@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar'
 import SwipeGalleryContainer from './components/SwipeGalleryContainer'
 
 class App extends Component {
   render() {
     return (
-      <SwipeGalleryContainer />
+      <div>
+        <NavBar />
+        <SwipeGalleryContainer />
+      </div>
     );
   }
 }
