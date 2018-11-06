@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  width: 90%;
+  height: 20%;
+  margin: 0 auto
+}
+
+.button {
+  display: flex;
+  align-content: space-around;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid white
+}
+
+.button-container {
+  width: 33%;
+  height: auto;
+  border: 1px solid blue
+}
+
+.swipeGalleryContainer {
+  position: relative;
+  margin: 0px auto;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+}
+
+.swipeGalleryCurrentImage {
+  position: relative;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+}
+
+.namePreview {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
