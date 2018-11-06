@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import NavBar from './components/NavBar'
 import SwipeGalleryContainer from './components/SwipeGalleryContainer'
+import Footer from './components/Footer'
 
 class App extends Component {
   render() {
@@ -8,8 +9,9 @@ class App extends Component {
       <div>
         <NavBar />
         <SwipeGalleryContainer />
+        <Footer />
       </div>
-    );
+    )
   }
 }
 
