@@ -5,14 +5,11 @@ import dislike from "../dislike.png";
 import profile from "../profile.png";
 import { addToMatchList, ADD_TO_MATCH_LIST } from "../actions/addToMatchList"
 import { connect } from 'react-redux'
-import store from "../store";
 
 class Footer extends React.Component {
   likeButton() {
     this.props.addToMatchList()
   }
-
-  // clickLike = () => store.dispatch({ type: ADD_TO_MATCH_LIST })
   
   render() {
     return (

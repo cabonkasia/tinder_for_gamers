@@ -5,8 +5,8 @@ const matchList = []
 export default (state = matchList, action) => {
   switch (action.type) {
     case ADD_TO_MATCH_LIST:
-      return state = [26]
+      return state = [action.match]
   default:
-    return state = [18]
+    return state
   }
 }
