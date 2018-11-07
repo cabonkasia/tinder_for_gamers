@@ -10,7 +10,7 @@ export default class SwipeGalleryContainer extends React.Component {
   
   render() {
     return (
-      <SwipeGallery />
+      <SwipeGallery currentIndex = {}/>
     )
   }
 }

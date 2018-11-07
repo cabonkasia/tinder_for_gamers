@@ -75,7 +75,7 @@ class App extends Component {
 //     document.write(imgStr); document.close();
 // }
 
-  images = state.gamerholics.map(gamerholic => gamerholic.images[0])
+  allImagesArr = state.gamerholics.map(gamerholic => gamerholic.images[0])
   //currentIndex = //use indexOf
 
   getNewImage(images, currentIndex) {
@@ -87,6 +87,7 @@ class App extends Component {
     console.log("No more gamers images to display")
   }
 
+  getNewImage(allImagesArr, currentIndex)
 
   render() {
     return (

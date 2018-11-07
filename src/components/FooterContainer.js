@@ -9,7 +9,7 @@ changePhoto = () => {
   this.props.dispatch({
     type: 'CHANGE_PHOTO',
     payload: {
-      currentIndex: {} //what data type? where to define and store it?
+      currentIndex: "" //what data type? where to define and store it?
     }
   }
   )

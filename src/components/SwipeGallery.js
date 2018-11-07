@@ -5,16 +5,14 @@ import '../styles/style.css';
 export default function SwipeGallery(props) {
 
   const initialState = {
-    name: "felix",
-    age: "",
-    image: ""
+    currentIndex: ""
   }
 
   return (
     <div className='swipeGalleryContainer'>
       <img className='swipeGalleryCurrentImage'
-        src='https://hdqwalls.com/download/blonde-cute-girl-pg-2048x2048.jpg'
-        alt='match-placeholder-profile-pic-girl'
+        src={{allImagesArr}[{state.props.initialState}]}
+        alt='match-profile-pic'
         >
       </img>
       <div className='namePreview'>{initialState.name}, {props.users[0].age}</div>
