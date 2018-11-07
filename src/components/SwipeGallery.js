@@ -3,10 +3,16 @@ import * as React from 'react'
 import '../styles/style.css';
 
 export default function SwipeGallery(props) {
+  // constructor(props) {
+  //   super(props)
+
+    
+  // }
+  
   return (
     <div className='swipeGalleryContainer'>
       <img className='swipeGalleryCurrentImage'
-        src='https://hdqwalls.com/download/blonde-cute-girl-pg-2048x2048.jpg'
+         src={`/images/`}
         alt='match-placeholder-profile-pic-girl'
         >
       </img>
