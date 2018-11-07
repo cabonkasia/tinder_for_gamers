@@ -6,14 +6,15 @@ import SwipeGallery from './SwipeGallery'
 class SwipeGalleryContainer extends React.Component {  
   render() {
     return (
-      <SwipeGallery users={this.props.users}/>
+      <SwipeGallery currentUser={this.props.currentUser}/>
     )
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-    users: state.users
+    users: state.users,
+    currentUser: state.currentUser
   }
 }
 

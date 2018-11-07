@@ -1,5 +1,4 @@
-{
-  "gamerholics": [
+  const gamerholics = [
     {
       "id": 1,
       "name": "Stella",
@@ -15,7 +14,7 @@
       "id": 2,
       "name": "Dario",
       "age": 18,
-      "images": [],
+      "images": ["dario.jpg"],
       "gender": "male",
       "console": ["PlayStation", "Nintendo"],
       "favGames": [],
@@ -26,7 +25,7 @@
       "id": 3,
       "name": "Karel",
       "age": 64,
-      "images": [],
+      "images": ["karel.jpg"],
       "gender": "male",
       "console": ["Nintendo", "PC", "Retro"],
       "favGames": [],
@@ -37,7 +36,7 @@
       "id": 4,
       "name": "Melissa",
       "age": 25,
-      "images": [],
+      "images": ["melissa.jpg"],
       "gender": "female",
       "console": ["Retro", "Xbox"],
       "favGames": [],
@@ -48,7 +47,7 @@
       "id": 5,
       "name": "Kasia",
       "age": 30,
-      "images": [],
+      "images": ["kasia.jpg"],
       "gender": "female",
       "console": ["Retro", "Xbox", "PC"],
       "favGames": [],
@@ -56,4 +55,5 @@
       "isMatch": false
     }
   ]
-}
+
+  export default gamerholics

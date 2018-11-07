@@ -1,5 +1,5 @@
-import users from '../data/users.json'
+import users from '../data/data'
 
 export default function() {
-  return JSON.parse(JSON.stringify(users.gamerholics))  
+  return users
 }
