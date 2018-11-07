@@ -5,9 +5,12 @@ import data from '../data/users'
 import SwipeGallery from './SwipeGallery'
 
 export default class SwipeGalleryContainer extends React.Component {
+  
+
+  
   render() {
     return (
-      <SwipeGallery users={data.gamerholics}/>
+      <SwipeGallery />
     )
   }
 }

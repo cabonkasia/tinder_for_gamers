@@ -5,13 +5,20 @@ import dislike from "../images/dislike.png";
 import profile from "../images/profile.png";
 
 export default class Footer extends React.Component {
+
+  handleClick = (event) => {
+      this.props.changePhoto({
+      currentIndex: this.currentIndex
+    });
+  }
+
   render() {
     return (
       <footer className="footer">
-        <button><img src={heart} className="button" /></button>
+        <button><img src={heart} onClick={this.handleClick} className="button" alt="like"/></button>
 
-        <button><img src={dislike} className="button" /></button>
-        <button><img src={profile} className="button" /></button>
+        <button><img src={dislike} className="button" alt="full profile"/></button>
+        <button><img src={profile} onClick={this.handleClick} className="button" alt="dislike"/></button>
 
       </footer>
     );
