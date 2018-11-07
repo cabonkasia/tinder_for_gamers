@@ -1,9 +1,10 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 
 import SwipeGallery from './SwipeGallery'
 
-export default class SwipeGalleryContainer extends React.Component {
+class SwipeGalleryContainer extends React.Component {  
   render() {
     return (
       <SwipeGallery />
@@ -11,3 +12,10 @@ export default class SwipeGalleryContainer extends React.Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {
+    users: state.users
+  }
+}
+
+export default connect(mapStateToProps)(SwipeGalleryContainer)
