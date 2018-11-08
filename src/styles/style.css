@@ -1,25 +1,26 @@
 .navbar {
   display: flex;
   align-items: center;
-  border: 1px solid red;
-  width: 90%;
-  height: 20%;
-  margin: 0 auto
+  width: 500px;
+  height: 90px;
+  margin: 0 auto;
 }
 
 .button {
   display: flex;
-  align-content: space-around;
+  align-content: center;
   width: 30px;
+  padding-left: 50%;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid white
+  border: 1px solid white;
 }
 
 .button-container {
-  width: 33%;
-  height: auto;
-  border: 1px solid blue
+width: 120%;
+ border-radius: 50%;
+ margin-top: 10px;
+ margin-left: 10px;
 }
 
 .swipeGalleryContainer {
@@ -35,14 +36,30 @@
   text-align: center;
   width: 500px;
   height: 500px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 5px 5px 18px #2dd7e5;
+}
+
+.imgProfile {
+  width: 80px;
+ border-radius: 50%;
+
 }
 
 .namePreview {
   position: absolute;
   bottom: 8px;
   left: 16px;
-  
   font-size: 3em;
   color: white;
   text-shadow: 2px 2px #000000;
+}
+
+.logo {
+  padding-left: 60%;
+  display: flex;
+  align-content: center;
+  width: 40px;
+  border-radius: 30%;
 }
