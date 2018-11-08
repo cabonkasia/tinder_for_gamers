@@ -1,6 +1,6 @@
 import * as React from "react";
 import heart from "../heart.png";
-import "../Style.css";
+import '../styles/style.css'
 import dislike from "../dislike.png";
 import profile from "../profile.png";
 import { addToLiked } from './FooterContainer'
@@ -16,10 +16,8 @@ export default class Footer extends React.Component {
       <footer className="footer">
         <LikeButtonContainer />
         {/* <button><img src={heart} onClick={this.handleClick} className="button" /></button> */}
-
-        <button><img src={dislike} className="button" /></button>
-        <button><img src={profile} className="button" /></button>
-
+        <button><img src={dislike} className="buttonFooter" /></button>
+        <button><img src={profile} className="buttonFooter" /></button>
       </footer>
     );
   }
