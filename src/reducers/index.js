@@ -5,7 +5,7 @@ import currentUserReducer from './currentUserReducer'
 import likeUser from './likeUser'
 
 export default combineReducers({
-  likeUser,
+  // likeUser,
   userReducer,
   currentUser: currentUserReducer,
   likedUsers: likeUser,
