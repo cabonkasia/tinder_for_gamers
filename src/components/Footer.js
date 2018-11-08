@@ -3,12 +3,19 @@ import heart from "../heart.png";
 import "../Style.css";
 import dislike from "../dislike.png";
 import profile from "../profile.png";
+import { addToLiked } from './FooterContainer'
+import LikeButtonContainer from './LikeButtonContainer'
 
 export default class Footer extends React.Component {
+
+  handleClick = () => {
+    this.props.addToLiked({})}
+
   render() {
     return (
       <footer className="footer">
-        <button><img src={heart} className="button" /></button>
+        <LikeButtonContainer />
+        {/* <button><img src={heart} onClick={this.handleClick} className="button" /></button> */}
 
         <button><img src={dislike} className="button" /></button>
         <button><img src={profile} className="button" /></button>
