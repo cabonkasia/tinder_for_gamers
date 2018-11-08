@@ -9,10 +9,9 @@ const randomUser = () => {
 const initialState = randomUser()
 
 const reducer = (state = initialState, action={}) => {
-  console.log(state)
-  switch (action.type) {
+   switch (action.type) {
     case SHOW_RANDOM_USER:
-      return {...state} = randomUser();
+       return {...state} = randomUser();
     default:
       return state
   }
@@ -20,9 +19,5 @@ const reducer = (state = initialState, action={}) => {
 
 export default reducer
 
-// const randomNum = Math.floor(Math.random() * users.length)
 
-// export default function() {
-//   return users[randomNum]
-// }
 

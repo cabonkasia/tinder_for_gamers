@@ -8,6 +8,5 @@ export default combineReducers({
   // likeUser,
   userReducer,
   currentUser: currentUserReducer,
-  likedUsers: likeUser,
-  
+  likedUsers: likeUser
 })

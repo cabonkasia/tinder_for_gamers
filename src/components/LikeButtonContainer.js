@@ -9,12 +9,12 @@ class LikeButtonContainer extends Component {
 
   handleClick = () => {
     this.props.addToLike(this.props.currentUser)
-    //this.props.showRandomUser()
+    this.props.showRandomUser(this.props.currentUser)
     //this.props.addToNotDisplayed(this.props.notDisplayed)
 } 
 
 render() {
-  console.log(this.props)
+  // console.log(this.props)
   return (
     <LikeButton handler={this.handleClick}/>
   )
@@ -31,4 +31,4 @@ const mapStateToProps = (state) => {
 
 //connect add dispatch method and props
 //{ addToLike } below makes sure we don't need to use dispatch method
-export default connect (mapStateToProps, { addToLike })(LikeButtonContainer)
+export default connect (mapStateToProps, { addToLike, showRandomUser })(LikeButtonContainer)
