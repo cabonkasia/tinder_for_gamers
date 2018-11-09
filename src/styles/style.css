@@ -19,6 +19,14 @@ body {
   margin: 0 auto 3% auto;
 }
 
+.notificationMessages {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  width: 35px;
+  height: 35px;
+}
+
 .button {
   display: flex;
   align-content: center;
@@ -125,7 +133,7 @@ body {
   margin: 0px 4%;
   border-radius: 50%;
   border: none;
-	background-color:#f1c500;
+  background-color:#f1c500;
 }
 
 .btnFooter:hover {
@@ -133,16 +141,13 @@ body {
 }
 
 .buttonFooter {
-  display: flex;
   margin: 10px;
   width: 100px;
   height: 100px;
  }
 
  .footer {
-  position: block;
   text-align: center;
-  align-items: center;
   margin: 3.5% auto 0px auto;
   width: 90%;
   height: 90%;
