@@ -88,6 +88,11 @@ body {
   margin: 3% auto 0px auto;
   padding: 0px;
   color: white;
+  text-decoration: none;
+}
+
+.navLinks {
+  text-decoration: none;
 }
 
 .namePreview {
