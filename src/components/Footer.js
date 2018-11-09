@@ -13,7 +13,6 @@ export default class Footer extends React.Component {
       <footer className="footer">
         <LikeButtonContainer />
         <button className='btnFooter'><img src={profile} alt="current gamer's profile" className="buttonFooter" /></button>
-//         <button className='btnFooter'><img src={'images/Red Button.png'} className="buttonFooter" /></button>
         <DislikeButtonContainer />
       </footer>
     );

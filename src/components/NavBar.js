@@ -1,7 +1,6 @@
 import * as React from 'react'
 import '../styles/style.css'
-import logoapp from '../logoapp.png'
-import message from '../message.png'
+import { NavLink } from 'react-router-dom'
 
 export default class NavBar extends React.Component {
   render(){  
@@ -19,16 +18,20 @@ export default class NavBar extends React.Component {
           </div>
 
           <div className='profileButton'>
-            <img src={'images/Logo.png'} className="logo" />
+            <NavLink to='/' className='navLinks' style={{ textDecoration: 'none' }}>
+              <img src={'images/Logo.png'} className="logo" />
+            </NavLink>
           </div>
 
           <div className='profileButton'>
-            <img className='imgProfile'
-              src="images/messagesIcon.png"
-              alt='match-placeholder-profile-pic-girl'
-            >
-            </img>
-            <h1 className='buttonUndertext'>MESSSAGES</h1>
+            <NavLink to='/messages' className='navLinks' style={{ textDecoration: 'none' }}>
+              <img className='imgProfile'
+                src="images/messagesIcon.png"
+                alt='match-placeholder-profile-pic-girl'
+              >
+              </img>
+              <h1 className='buttonUndertext'>MESSSAGES</h1>
+            </NavLink>
           </div>
 
 
