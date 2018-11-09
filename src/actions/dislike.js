@@ -5,3 +5,4 @@ export function addToDislike (currentUserParam) {
   type: ADD_TO_DISLIKED,
   payload: currentUserParam
   }
+} 

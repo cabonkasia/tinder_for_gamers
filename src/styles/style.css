@@ -1,83 +1,141 @@
+body {
+  background-image: url("space.png");
+  background-size: cover;
+}
+
+.navbarContainer {
+  width: 100%;
+  background-color: #148b9d;
+  box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.75);
+}
+
 .navbar {
   display: flex;
   align-items: center;
-  width: 500px;
-  height: 90px;
-  margin: 0 auto;
+  margin: 0px auto;
+  width: 43%;
+  margin: 0 auto 3% auto;
 }
 
 .button {
   display: flex;
   align-content: center;
-  width: 30px;
-  padding-left: 50%;
   height: 30px;
+  padding: 10% 50%;
   border-radius: 50%;
-  border: 1px solid white;
+  margin: 0px 4
+}
+
+.profileButton {
+  display: block;
+  align-content: center;
+  margin: 2% auto 2% auto;
+  text-align: center;
 }
 
 .button-container {
-width: 120%;
+ /* width: 120%;
  border-radius: 50%;
- margin-top: 10px;
- margin-left: 10px;
+ margin-top: 10px; */
+}
+
+.galleryBox {
+  width: 22.5%;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2.3% 0px 8% 0px;
+  box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.35)
 }
 
 .swipeGalleryContainer {
   position: relative;
-  margin: 0px auto;
   text-align: center;
-  width: 500px;
-  height: 500px;
+  color: white;
 }
 
 .swipeGalleryCurrentImage {
-  position: relative;
+  position: block;
   text-align: center;
-  width: 500px;
-  height: 500px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  box-shadow: 5px 5px 18px #2dd7e5;
+  width: 70%;
+  height: 70%;
+  border-radius: 20px;
+  box-shadow: inset 10px 5px 5px black;
+  border: 5px solid #f1c500;
 }
 
 .imgProfile {
-  width: 80px;
- border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 0.25% auto 0.25% auto;
+}
 
+.shadow {
+  position: absolute;
+  width: 70%;
+  height: 97%;
+  box-shadow: inset 0px -69px 60px -42px #444444;
+  border-radius: 20px;
+  top: 1%;
+  left: 15%;
+}
+
+.buttonUndertext {
+  font-size: 100%;
+  font-weight: 400;
+  margin: 3% auto 0px auto;
+  padding: 0px;
+  color: white;
 }
 
 .namePreview {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
-  font-size: 3em;
+  bottom: 8%;
+  left: 20%;
+  font-size: 180%;
+  font-weight: 500;
   color: white;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 0px 3px 5px rgba(0,0,0,0.5)
+}
+
+.profileButton .logo {
+  margin: 0px;
 }
 
 .logo {
-  padding-left: 60%;
-  display: flex;
+  padding: 10% 20%;
+  width: 55%;
+  height: 55%;
   align-content: center;
-  width: 40px;
-  border-radius: 30%;
+}
+
+.btnFooter {
+  margin: 0px 4%;
+  border-radius: 50%;
+  border: none;
+	background-color:#f1c500;
+}
+
+.btnFooter:hover {
+	background-color:orangered;
 }
 
 .buttonFooter {
   display: flex;
-  align-content: space-around;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid white
+  margin: 10px;
+  width: 100px;
+  height: 100px;
  }
 
  .footer {
-  display: flex;
+  position: block;
+  text-align: center;
   align-items: center;
-  margin: 0px auto;
-  margin-top: 20px;
-  width: 10%;
-  height: 90% ;
+  margin: 3.5% auto 0px auto;
+  width: 90%;
+  height: 90%;
  }
+
+ 
