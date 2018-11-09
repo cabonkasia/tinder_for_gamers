@@ -7,18 +7,13 @@ import DislikeButtonContainer from "./DislikeButtonContainer";
 
 export default class Footer extends React.Component {
 
-  // handleClick = () => {
-  //   this.props.addToLiked({})
-  // }
 
   render() {
     return (
       <footer className="footer">
         <LikeButtonContainer />
-        {/* <button><img src={heart} onClick={this.handleClick} className="button" /></button> */}
-        <button><img src={profile} className="buttonFooter" /></button>
+        <button><img src={profile} className="buttonFooter" alt="current gamer's profile"/></button>
         <DislikeButtonContainer />
-        {/* <button><img src={profile} className="buttonFooter" /></button> */}
       </footer>
     );
   }
