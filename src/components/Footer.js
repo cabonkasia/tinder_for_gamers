@@ -15,9 +15,8 @@ export default class Footer extends React.Component {
     return (
       <footer className="footer">
         <LikeButtonContainer />
-        {/* <button><img src={heart} onClick={this.handleClick} className="button" /></button> */}
-        <button><img src={dislike} className="buttonFooter" /></button>
-        <button><img src={profile} className="buttonFooter" /></button>
+        <button className='btnFooter'><img src={profile} className="buttonFooter" /></button>
+        <button className='btnFooter'><img src={'images/Red Button.png'} className="buttonFooter" /></button>
       </footer>
     );
   }
