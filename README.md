@@ -1,4 +1,24 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Co-op
+
+The project was a group assignment at a coding bootcamp.
+The app is a beginning of a bigger project where gamers from one city could find a company to play games with.
+
+At this moment the functionality working is:
+- liking or disliking other users (with green and red buttons respectively)
+- going to messages endpoint (using messages button)
+- going back to home page (using co-op logo-button)
+
+## Demo
+
+https://adoring-curran-76db72.netlify.com/
+
+## Built with:
+- React
+- Redux 
+- JSX
+- CSS
+
+This project was bootstrapped with [Create React App].
 
 ## Available Scripts
 
