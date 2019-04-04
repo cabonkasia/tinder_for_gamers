@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Component } from 'react'
 import { connect } from 'react-redux'
 import { addToLike } from '../actions/like'
-import { showRandomUser } from '../actions/showRandomUser'
+import { showNextUser } from '../actions/showNextUser'
 //import { showMatch } from '../actions/matchNotification'
 import LikeButton from './LikeButton';
 // import MatchNotification from './MatchNotification'
@@ -13,7 +13,7 @@ class LikeButtonContainer extends Component {
 
   handleClick = () => {
     this.props.addToLike(this.props.currentUser)
-    this.props.showRandomUser(this.props.currentUser)
+    this.props.showNextUser(this.props.currentUser)
     //this.props.showMatch(this.props.showComponent)
     // this.setState({showComponent: true});
     //this.props.addToNotDisplayed(this.props.notDisplayed)
@@ -45,4 +45,4 @@ const mapStateToProps = (state) => {
 
 //connect add dispatch method and props
 //{ addToLike } below makes sure we don't need to use dispatch method
-export default connect (mapStateToProps, { addToLike, showRandomUser })(LikeButtonContainer)
+export default connect (mapStateToProps, { addToLike, showNextUser })(LikeButtonContainer)

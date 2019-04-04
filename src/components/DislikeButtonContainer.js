@@ -2,15 +2,15 @@ import * as React from 'react'
 import { Component } from 'react'
 import { connect } from 'react-redux'
 import { addToDislike } from '../actions/dislike'
-import { showRandomUser } from '../actions/showRandomUser'
+import { showNextUser } from '../actions/showNextUser'
 import DislikeButton from './DislikeButton';
 
 class DislikeButtonContainer extends Component {
 
   handleClick = () => {
     this.props.addToDislike(this.props.currentUser)
-    this.props.showRandomUser(this.props.currentUser)
-    //this.props.addToNotDisplayed(this.props.notDisplayed)
+    this.props.showNextUser(this.props.currentUser)
+   
 } 
 
 render() {
@@ -31,4 +31,4 @@ const mapStateToProps = (state) => {
 
 //connect add dispatch method and props
 //{ addToLike } below makes sure we don't need to use dispatch method
-export default connect (mapStateToProps, { addToDislike, showRandomUser })(DislikeButtonContainer)
+export default connect (mapStateToProps, { addToDislike, showNextUser })(DislikeButtonContainer)

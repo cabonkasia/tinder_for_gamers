@@ -11,10 +11,10 @@ export const ADD_TO_LIKED = 'ADD_TO_LIKED'
 //export const ADD_TO_NOT_DISPLAYED = 'ADD_TO_NOT_DISPLAYED'
 
 //below function returns an object with properties: type and payload
-export function addToLike (currentUserParam) {
+export function addToLike (currentUserIndex) {
   return {
   type: ADD_TO_LIKED,
-  payload: currentUserParam
+  payload: currentUserIndex
   }
 } 
 
